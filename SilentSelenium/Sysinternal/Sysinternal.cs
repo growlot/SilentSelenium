@@ -37,7 +37,7 @@ namespace Sysinternal
                 var si = new ProcessStartInfo()
                 {
                     FileName = cmdLine,
-                    Arguments = string.Format("-accepteula -d -i {0} \"{1}\" {2}", session, executableToRun, argument)
+                    Arguments = string.Format("-accepteula -d -x -s \"{1}\" {2}", session, executableToRun, argument)
                 };
                 Process.Start(si);
                 DebugEx.Log("ExecuteByPsExec Success!!!");
